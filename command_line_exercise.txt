@@ -1,0 +1,7 @@
+git rm --cached budapest/january/week01.csv
+mv budapest/january/week01.csv prague/january/
+grep -E '*-([0-9]|[0-9][0-9])*' budapest/february/week01.csv > budapest/freezing_days.csv
+mv prague/february/week01.csv prague/february/week02.csv
+echo "2020.02.20,-1 °C,7 °C,76%" >> prague/february/week01.csv
+git add .
+git commit -m "Command line exercise"
