@@ -13,7 +13,7 @@ def text_from_matrix(two_d_matrix):
     From every odd row, select the letter found in the odd columns.
     The letters will be concatenated in this order: from left-top to right-bottom.
 """
-
+# create empty variable for text
     text = ""
     if not all(len(row) == len(two_d_matrix[0]) for row in two_d_matrix):
         raise AttributeError(
